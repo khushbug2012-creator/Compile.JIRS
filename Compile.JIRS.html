@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pulse Lost Nearby</title>
+<style>
+body{margin:0;font-family:Arial;background:#f4f8fb;}
+nav{background:#1b7cc5;padding:15px;text-align:center;}
+nav a{color:white;margin:0 15px;text-decoration:none;font-weight:bold;}
+header{padding:100px 20px;text-align:center;background:#0f4c81;color:white;}
+header h1{font-size:45px;}
+button{padding:12px 25px;border:none;border-radius:30px;background:white;color:#0f4c81;cursor:pointer;}
+section{padding:60px 10%;}
+img{width:100%;border-radius:15px;margin-top:20px;}
+.card{background:white;padding:30px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.1);}
+footer{background:#0f4c81;color:white;text-align:center;padding:20px;}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="mission.html">Mission</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<header>
+<h1>Pulse Lost Nearby</h1>
+<p>Building a faster and smarter animal emergency response system.</p>
+<button onclick="location.href='about.html'">Explore</button>
+</header>
+
+<section>
+<div class="card">
+<h2>Protecting Animals Through Smart Coordination</h2>
+<p>We aim to reduce rescue delays and strengthen collaboration between communities and rescue teams.</p>
+<img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d">
+</div>
+</section>
+
+<footer>© 2026 Pulse Lost Nearby</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Pulse Lost Nearby</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:#f4f8fb;
+}
+
+nav{
+    background:#1b7cc5;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+section{
+    padding:80px 10%;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom:30px;
+}
+
+img{
+    width:100%;
+    border-radius:15px;
+    margin-top:20px;
+}
+
+button{
+    background:#1b7cc5;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    margin-top:20px;
+}
+
+#learnMoreContent{
+    display:none;
+    margin-top:30px;
+}
+</style>
+
+<script>
+function showLearnMore(){
+    var content = document.getElementById("learnMoreContent");
+    content.style.display = "block";
+}
+</script>
+
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="mission.html">Mission</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<section>
+<div class="card">
+<h2>About Our Website</h2>
+
+<p>
+Pulse Lost Nearby is an innovative system designed to detect emergencies in real time and respond before it is too late.
+</p>
+
+<p>
+It strengthens coordination between communities, NGOs, and rescue teams to reduce delays and improve survival chances.
+</p>
+
+<img src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8">
+
+<button onclick="showLearnMore()">Learn More</button>
+
+<div id="learnMoreContent">
+
+<h2>Learn More</h2>
+
+<p>
+We are a purpose-driven team dedicated to transforming animal safety through intelligent and responsive systems.
+</p>
+
+<p>
+Our mission focuses on eliminating rescue delays and building a connected ecosystem where rapid action becomes the standard.
+</p>
+
+<p>
+By connecting NGOs, veterinarians, volunteers, and authorities on one platform, we strengthen collaboration during emergencies.
+</p>
+
+<img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b">
+
+</div>
+
+</div>
+</section>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Information</title>
+<style>
+body{margin:0;font-family:Arial;background:#cfc5df;color:#5b1d3b;}
+nav{background:#1b7cc5;padding:15px;text-align:center;}
+nav a{color:white;margin:0 15px;text-decoration:none;font-weight:bold;}
+section{padding:60px 10%;}
+input,textarea,select{
+width:100%;
+padding:14px;
+border-radius:30px;
+border:2px solid #8b3a62;
+background:transparent;
+margin-bottom:20px;
+}
+textarea{border-radius:20px;}
+.row{display:flex;gap:20px;}
+.row div{flex:1;}
+.file-upload{
+border:2px dashed #8b3a62;
+border-radius:20px;
+padding:30px;
+text-align:center;
+cursor:pointer;
+}
+.file-upload input{display:none;}
+button{
+background:#5b1d3b;
+color:white;
+padding:12px;
+border:none;
+border-radius:30px;
+cursor:pointer;
+width:100%;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="mission.html">Mission</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<section>
+
+<h2>Contact Information</h2>
+
+<form>
+
+<h3>Name</h3>
+<div class="row">
+<div>
+<label>First Name (required)</label>
+<input type="text" required>
+</div>
+<div>
+<label>Last Name (required)</label>
+<input type="text" required>
+</div>
+</div>
+
+<label>Date</label>
+<input type="date">
+
+<label>Message (required)</label>
+<textarea required></textarea>
+
+<label>Capture Evidence (required)</label>
+<label class="file-upload">
++ Add a File
+<input type="file" required>
+</label>
+
+<h3>Address</h3>
+
+<label>Country</label>
+<select>
+<option>India</option>
+</select>
+
+<label>Address Line 1</label>
+<input type="text">
+
+<label>Address Line 2</label>
+<input type="text">
+
+<label>City</label>
+<input type="text">
+
+<label>Pin</label>
+<input type="number">
+
+<label>State</label>
+<input type="text">
+
+<label>Add Your Google Map Link (required)</label>
+<input type="url" required>
+
+<button>Submit Report</button>
+
+</form>
+
+</section>
+
+</body>
+</html>
